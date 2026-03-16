@@ -1,0 +1,154 @@
+#1
+#function 
+def msg(): #failed function
+    print("hello world")    
+msg() # calling function    
+
+#2
+#function 
+def msg(): #failed function
+    val1=int(input("enter first value:"))
+    val2=int(input("enter second value:"))
+    print (val1+val2)
+
+msg() # calling function    
+
+
+
+#3
+#function 
+def msg(): #failed function
+    val1=int(input("enter first value:"))
+    val2=int(input("enter second value:"))
+    #print (val1+val2)
+    return (val1+val2)
+    
+print(msg()) # calling function    
+
+#4
+#function 
+def msg(): #failed function
+    val1=int(input("enter first value:"))
+    val2=int(input("enter second value:"))
+    #print (val1+val2)
+    return (val1+val2)
+    
+#print(msg()) # calling function    
+res = msg()
+print("result=",res)
+
+#5
+#function 
+def msg(): #failed function
+    val1=int(input("enter first value:"))
+    val2=int(input("enter second value:"))
+    sum=(val1+val2)
+    mul =(val1*val2)
+    sub=(val1-val2)
+    div = (val1/val2)
+    return sum,mul,sub,div
+#print(msg()) # calling function    
+res = msg()
+print("result=",res)
+
+
+#6
+#positional argument 
+def personalInfo(fname,lname):
+    print("First name:",fname)
+    print("last name:",lname)
+
+fname = "Prashant"    
+lname = "jha"
+personalInfo("Prashant","jha")
+
+
+#7
+#define argument
+def cityName(city="Nagpur"):
+    print("city Name:",city)
+
+cityName("Mumbai")
+cityName("Delhi")
+cityName()
+
+
+
+#8
+#variable length argument
+def cityName(*city):
+    print("city Name:",city)
+
+cityName("Mumbai","Nagpur","Pune","Nashik")
+
+
+
+#9
+def login():
+    username = input("enter username:")
+    password = input("enter password:")
+
+    if username == password:
+        print ("login successful")
+    else:
+        print ("invalid credentials")    
+login()
+
+
+#10
+def searchValue(target):
+    for i in range(len(mylist)): #len =7,i=1
+        print(mylist[i]) #mylist [2]
+
+mylist = [4,2,7,8,5,4,1]
+target = 7
+searchValue(target) #calling function
+
+#11
+def searchValue(target):
+    for i in range(len(mylist)): #len =7,i=1
+        if mylist[i] == target: 
+           return i
+
+mylist = [4,2,7,8,5,4,1]
+target = 7
+res = searchValue(target) 
+print ("value found at index number =",res)
+
+#12
+
+def searchValue(target):
+    for i in range(len(mylist)): #len =7,i=1
+        if mylist[i] == target: 
+           return i
+    return -1    
+
+mylist = [4,2,7,8,5,4,1]
+target = 10
+res = searchValue(target) #calling function
+if res !=-1:
+    print ("value found at index number =",res)
+else:
+    print("value not found")    
+
+print ("value found at index number =",res)
+
+
+#13
+def searchValue(mylist):
+    sum =0
+    for i in range (len(mylist)): #i=1
+        sum = sum + mylist[i]
+    return sum    
+
+mylist = [4,2,7,8,5,4,1]
+res = searchValue(mylist) #calling function
+print ("sum of array=",res)
+
+
+#14
+
+
+
+
+#15
