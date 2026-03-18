@@ -1,0 +1,45 @@
+# #1
+
+# #input = 'prashant*is*a*good*programmer'
+# #output = ****prashantisagoodprogrammer
+
+# name = 'prashant*is*a*good*programmer'
+# newname = '' #empty str | prashant
+# val =""  #empty str    | *
+# for i in name : #i=1:r
+#     if i !='*':
+#         newname += i
+#     else:
+#         val += i
+# print (newname)
+# print(str(val+newname))            
+
+
+#2
+# description 
+# write a program to calculate and return the sum of distance between the adjacent numbers in an array of positive integers 
+# note
+# you are expected to write a code in the find Total distance function only which recieves the first parameter as the number of items in the array, and second parameter as the array itself .
+# you are not requested to take input from the console 
+
+# mylist =[]     #[10,11,7,12,14]
+# N = int(input("enter the value of N:"))
+# for i in range (N):
+#     val = int(input("enter the value:"))
+#     mylist.append(val)
+# sum = 0
+# for j in range(len(mylist)):
+#     if j+1 in range(len(mylist)):
+#         sum += abs(mylist[j]-mylist[j+1])
+# print(sum)
+
+
+#3
+# list = [3,2,3,8,7,6,3,4]
+# max = 0
+
+# for i in list:
+#     if i > max:
+#         max = i
+
+# print(max)
